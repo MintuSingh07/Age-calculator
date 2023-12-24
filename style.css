@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+html{
+    font-size: 10px;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: white;
+    padding: 1rem;
+}
+.calculator{
+    width: 100%;
+    max-width: 60rem;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.calculator>h1{
+    font-size: 5rem;
+
+}
+.calculator>h1>span{
+    color: #ffff76;
+}
+.input-box{
+    margin: 4rem 0;
+    padding: 3.5rem;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    border-radius: 5vh;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.input-box>input{
+    flex: 1;
+    margin-right: 2rem;
+    padding: 2rem;
+    border: 0;
+    outline: 0;
+    border-radius: 1.8rem;
+    position: relative;
+    cursor: pointer;
+}
+.input-box>button{
+    padding: 2rem;
+    border: 0;
+    outline: 0;
+    border-radius: .5rem;
+    background-color: rgb(255, 230, 0);
+    color: #000;
+    cursor: pointer;
+}
+
+#result{
+    font-size: 2rem;
+}
+.pop{
+    animation: res .3s;
+}
+@keyframes res {
+    0%{
+        margin-left: -100rem;
+    }
+    25%{
+        margin-left: -50rem;
+    }
+    50%{
+        margin-left: -20rem;
+    }
+    75%{
+        margin-left: 5rem;
+    }
+    100%{
+        margin-left: 10rem;
+    }
+}
